@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação de Equilíbrio de Vida</title>
+    <link rel="stylesheet" href="estilos 00.32.37.css"> <!-- Link para o seu arquivo CSS -->
+</head>
+<body>
+    <!-- Formulário Emocional -->
+    <div id="formularioEmocional" class="formulario">
+      <h2>Emocional</h2>
+      <!-- Perguntas Emocional -->
+      <div class="pergunta">
+          <label for="emocional1">Relação consigo mesmo (-10: Me desprezo, E: Em harmonia, 10: Focado em mim e egoísta): </label>
+          <input type="range" id="emocional1" min="-10" max="10" value="0">
+      </div>
+      <div class="pergunta">
+          <label for="emocional2">Relação com os outros (-10: Odeio gente, E: Aprendi a me posicionar, 10: Vivo em função dos outros): </label>
+          <input type="range" id="emocional2" min="-10" max="10" value="0">
+      </div>
+      <div class="pergunta">
+          <label for="emocional3">Relacionamento amoroso (-10: Pânico de me relacionar, E: Em paz com meu coração, 10: Sou de todo mundo): </label>
+          <input type="range" id="emocional3" min="-10" max="10" value="0">
+      </div>
+      <div class="pergunta">
+          <label for="emocional4">Inteligência emocional (-10: Perco o controle, E: Mantenho a calma, 10: Imune a sentimentos): </label>
+          <input type="range" id="emocional4" min="-10" max="10" value="0">
+      </div>
+      <div class="pergunta">
+          <label for="emocional5">Tempo para quem amo (-10: Não tenho tempo, E: Ajusto tempo de qualidade, 10: Não me deixe sozinho): </label>
+          <input type="range" id="emocional5" min="-10" max="10" value="0">
+      </div>
+      <div class="pergunta">
+          <label for="emocional6">Tempo comigo mesmo (-10: Nunca paro, E: Medito e leio, 10: Não saio do meu quarto): </label>
+          <input type="range" id="emocional6" min="-10" max="10" value="0">
+      </div>
+      <button type="button" onclick="calcularMedia('formularioEmocional')">Ver Média</button>
+  </div>
+
+  <!-- Formulário Saúde -->
+  <div id="formularioSaude" class="formulario">
+      <h2>Saúde</h2>
+      <div class="pergunta">
+        <label for="saude2">Alimentação (-10: Só como junk food, E: Alimentação equilibrada, 10: Obsessivo com dieta): </label>
+        <input type="range" id="saude2" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="saude3">Sono (-10: Durmo muito pouco, E: Durmo o necessário, 10: Durmo demais): </label>
+        <input type="range" id="saude3" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="saude4">Mental (-10: Muito estressado, E: Em equilíbrio, 10: Desconectado da realidade): </label>
+        <input type="range" id="saude4" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="saude5">Disposição física (-10: Sempre cansado, E: Disposição adequada, 10: Excesso de energia): </label>
+        <input type="range" id="saude5" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="saude6">Cuidados médicos (-10: Negligencio saúde, E: Cuido bem da saúde, 10: Hiponcondríaco): </label>
+        <input type="range" id="saude6" min="-10" max="10" value="0">
+    </div>
+    <button type="button" onclick="calcularMedia('formularioSaude')">Ver Média</button>
+</div>
+
+<!-- Formulário Desenvolvimento Pessoal -->
+<div id="formularioDesenvolvimento" class="formulario">
+    <h2>Desenvolvimento Pessoal</h2>
+    <!-- Perguntas Desenvolvimento Pessoal -->
+    <div class="pergunta">
+        <label for="desenvolvimento1">Profissional (-10: Odeio meu trabalho, E: Satisfeito com o trabalho, 10: Trabalho é minha vida): </label>
+        <input type="range" id="desenvolvimento1" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="desenvolvimento2">Espiritualidade (-10: Descrente, E: Espiritualidade equilibrada, 10: Dogmático): </label>
+        <input type="range" id="desenvolvimento2" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="desenvolvimento3">Diálogo interno (-10: Autocrítico, E: Autoconsciente, 10: Autoengano): </label>
+        <input type="range" id="desenvolvimento3" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="desenvolvimento4">Organização (-10: Desorganizado, E: Bem organizado, 10: Obsessivo com ordem): </label>
+        <input type="range" id="desenvolvimento4" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="desenvolvimento5">Finanças (-10: Descontrolado financeiramente, E: Finanças equilibradas, 10: Obcecado por dinheiro): </label>
+        <input type="range" id="desenvolvimento5" min="-10" max="10" value="0">
+    </div>
+    <div class="pergunta">
+        <label for="desenvolvimento6">Autoconfiança (-10: Inseguro, E: Confiança equilibrada, 10: Arrogante): </label>
+        <input type="range" id="desenvolvimento6" min="-10" max="10" value="0">
+    </div>
+    <button type="button" onclick="calcularMedia('formularioDesenvolvimento')">Ver Média</button>
+</div>
+<script src="script.js"></script> <!-- Link para o seu arquivo JavaScript -->
+</body>
+</html>
